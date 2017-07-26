@@ -23,6 +23,7 @@ The current schema for the output sqlite database is as follows:
 CREATE TABLE IF NOT EXISTS network_traffic (
 	id INTEGER PRIMARY KEY AUTOINCREMENT,
 	ip TEXT NOT NULL,
+	interface TEXT NOT NULL,
 	timestamp INTEGER NOT NULL,
 	send_total INTEGER NOT NULL,
 	recv_total INTEGER NOT NULL
